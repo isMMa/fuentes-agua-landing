@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuentes de Agua — Encuentra fuentes de agua potable cerca de ti</title>
+<meta name="description" content="Localiza fuentes de agua potable y manantiales cercanos, mira la distancia a cada una y calcula la ruta a pie. La app gratuita para senderismo, running y ciclismo.">
+<link rel="canonical" href="https://fuentes-agua.devcodelight.com/">
+<link rel="alternate" hreflang="es" href="https://fuentes-agua.devcodelight.com/">
+<link rel="alternate" hreflang="en" href="https://fuentes-agua.devcodelight.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://fuentes-agua.devcodelight.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Fuentes de Agua">
+<meta property="og:title" content="Fuentes de Agua — Encuentra fuentes de agua potable cerca de ti">
+<meta property="og:description" content="Localiza fuentes de agua potable y manantiales cercanos, ordenados por distancia, con ruta a pie incluida. Gratis para Android.">
+<meta property="og:url" content="https://fuentes-agua.devcodelight.com/">
+<meta property="og:image" content="https://play-lh.googleusercontent.com/Fi7oss6gasMuj3z85u_UrmzT1Ycp3SC4zF2Fwm4AUBK4Hp23Y8yDBDfN1TXa50JV-Zvy5kUMklcaBXvnvicSWvM=w512-h512">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fuentes de Agua — Encuentra fuentes de agua potable cerca de ti">
+<meta name="twitter:description" content="Localiza fuentes de agua potable y manantiales cercanos, ordenados por distancia, con ruta a pie incluida.">
+<meta name="twitter:image" content="https://play-lh.googleusercontent.com/Fi7oss6gasMuj3z85u_UrmzT1Ycp3SC4zF2Fwm4AUBK4Hp23Y8yDBDfN1TXa50JV-Zvy5kUMklcaBXvnvicSWvM=w512-h512">
+
+<link rel="icon" href="https://play-lh.googleusercontent.com/Fi7oss6gasMuj3z85u_UrmzT1Ycp3SC4zF2Fwm4AUBK4Hp23Y8yDBDfN1TXa50JV-Zvy5kUMklcaBXvnvicSWvM=w64-h64">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Fuentes de Agua",
+  "operatingSystem": "ANDROID",
+  "applicationCategory": "TravelApplication",
+  "url": "https://fuentes-agua.devcodelight.com/",
+  "description": "Encuentra fuentes de agua potable y manantiales cercanos, ordenados por distancia, con visualización en mapa y cálculo de ruta a pie.",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.app.fuentes_de_agua",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Trophy Lab"
+  },
+  "inLanguage": ["es", "en"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Fuentes de Agua funciona sin conexión a internet?",
+      "acceptedAnswer": { "@type": "Answer", "text": "La app necesita datos móviles o wifi para cargar el mapa y buscar fuentes la primera vez. Una vez cargada la zona, puedes consultar la lista y la distancia sin volver a descargar información." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La app es gratuita?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, Fuentes de Agua es gratuita y se financia con anuncios dentro de la app." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo añadir una fuente que no aparece en el mapa?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sí, cualquier persona puede añadir una fuente nueva desde la propia aplicación para que aparezca disponible para el resto de usuarios." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Solo encuentra fuentes urbanas o también manantiales?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Fuentes de Agua incluye tanto fuentes urbanas como manantiales naturales cercanos, útiles para rutas de senderismo alejadas de la ciudad." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Principal">
+    <a class="brand" href="#contenido">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2C12 2 5 10.5 5 15.2C5 19.1 8.13 22 12 22C15.87 22 19 19.1 19 15.2C19 10.5 12 2 12 2Z" fill="#2E9CAE"/>
+      </svg>
+      Fuentes de Agua
+    </a>
+    <div class="nav-links">
+      <a href="#caracteristicas">Características</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#capturas">Capturas</a>
+      <a href="#preguntas">Preguntas</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <div class="lang-switch">
+        <a href="/" aria-current="true">ES</a>
+        <a href="/en/" aria-current="false">EN</a>
+      </div>
+      <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.app.fuentes_de_agua">Descargar</a>
+    </div>
+  </nav>
+</header>
+
+<main id="contenido">
+  <section class="hero">
+    <svg class="hero-contours" viewBox="0 0 1200 650" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path class="contour" d="M0,20.0 L24,22.6 L48,25.0 L72,27.2 L96,29.1 L120,30.6 L144,31.5 L168,32.0 L192,31.9 L216,31.2 L240,30.0 L264,28.3 L288,26.3 L312,23.9 L336,21.4 L360,18.8 L384,16.3 L408,13.9 L432,11.9 L456,10.2 L480,8.9 L504,8.2 L528,8.0 L552,8.4 L576,9.3 L600,10.7 L624,12.6 L648,14.8 L672,17.2 L696,19.8 L720,22.3 L744,24.8 L768,27.1 L792,29.0 L816,30.5 L840,31.5 L864,32.0 L888,31.9 L912,31.3 L936,30.1 L960,28.5 L984,26.5 L1008,24.1 L1032,21.6 L1056,19.1 L1080,16.5 L1104,14.1 L1128,12.0 L1152,10.3 L1176,9.0 L1200,8.2" fill="none"/>
+    <path class="contour" d="M0,71.9 L24,76.0 L48,79.0 L72,80.6 L96,80.9 L120,79.8 L144,77.3 L168,73.6 L192,69.1 L216,64.0 L240,58.8 L264,53.8 L288,49.5 L312,46.0 L336,43.8 L360,43.0 L384,43.6 L408,45.6 L432,48.8 L456,53.1 L480,58.0 L504,63.2 L528,68.3 L552,73.0 L576,76.8 L600,79.5 L624,80.8 L648,80.8 L672,79.3 L696,76.5 L720,72.6 L744,68.0 L768,62.8 L792,57.6 L816,52.7 L840,48.6 L864,45.4 L888,43.5 L912,43.0 L936,44.0 L960,46.3 L984,49.8 L1008,54.2 L1032,59.2 L1056,64.4 L1080,69.5 L1104,73.9 L1128,77.5 L1152,79.9 L1176,81.0 L1200,80.6" fill="none"/>
+    <path class="contour" d="M0,127.2 L24,129.8 L48,129.5 L72,126.3 L96,120.7 L120,113.2 L144,104.7 L168,96.1 L192,88.3 L216,82.4 L240,78.8 L264,78.1 L288,80.3 L312,85.1 L336,92.0 L360,100.3 L384,109.0 L408,117.1 L432,123.8 L456,128.2 L480,130.0 L504,128.8 L528,124.9 L552,118.6 L576,110.7 L600,102.0 L624,93.6 L648,86.3 L672,81.0 L696,78.3 L720,78.4 L744,81.4 L768,87.0 L792,94.4 L816,102.9 L840,111.5 L864,119.3 L888,125.4 L912,129.1 L936,129.9 L960,127.9 L984,123.2 L1008,116.4 L1032,108.1 L1056,99.4 L1080,91.3 L1104,84.5 L1128,79.9 L1152,78.0 L1176,79.1 L1200,82.9" fill="none"/>
+    <path class="contour" d="M0,158.0 L24,156.7 L48,153.7 L72,149.6 L96,144.9 L120,140.4 L144,136.7 L168,134.5 L192,134.1 L216,135.5 L240,138.5 L264,142.7 L288,147.4 L312,151.9 L336,155.5 L360,157.6 L384,157.9 L408,156.4 L432,153.2 L456,149.0 L480,144.3 L504,139.8 L528,136.3 L552,134.3 L576,134.2 L600,135.8 L624,139.0 L648,143.3 L672,148.0 L696,152.5 L720,155.9 L744,157.7 L768,157.8 L792,156.0 L816,152.7 L840,148.4 L864,143.6 L888,139.3 L912,136.0 L936,134.2 L960,134.3 L984,136.1 L1008,139.5 L1032,144.0 L1056,148.7 L1080,153.0 L1104,156.2 L1128,157.8 L1152,157.7 L1176,155.7 L1200,152.2" fill="none"/>
+    <path class="contour" d="M0,203.4 L24,200.6 L48,197.3 L72,193.5 L96,189.5 L120,185.4 L144,181.4 L168,177.7 L192,174.6 L216,172.0 L240,170.2 L264,169.2 L288,169.1 L312,169.8 L336,171.4 L360,173.8 L384,176.8 L408,180.4 L432,184.3 L456,188.4 L480,192.5 L504,196.3 L528,199.8 L552,202.7 L576,204.9 L600,206.4 L624,207.0 L648,206.7 L672,205.5 L696,203.6 L720,200.9 L744,197.6 L768,193.8 L792,189.8 L816,185.7 L840,181.7 L864,178.0 L888,174.8 L912,172.2 L936,170.3 L960,169.2 L984,169.0 L1008,169.7 L1032,171.3 L1056,173.6 L1080,176.6 L1104,180.1 L1128,184.0 L1152,188.0 L1176,192.1 L1200,196.0" fill="none"/>
+    <path class="contour-accent" d="M0,239.9 L24,233.0 L48,225.8 L72,219.0 L96,213.0 L120,208.3 L144,205.2 L168,204.0 L192,204.8 L216,207.5 L240,211.8 L264,217.6 L288,224.3 L312,231.4 L336,238.4 L360,244.8 L384,250.1 L408,253.8 L432,255.8 L456,255.7 L480,253.8 L504,250.0 L528,244.7 L552,238.3 L576,231.3 L600,224.2 L624,217.5 L648,211.8 L672,207.4 L696,204.8 L720,204.0 L744,205.2 L768,208.3 L792,213.1 L816,219.1 L840,226.0 L864,233.1 L888,240.0 L912,246.2 L936,251.1 L960,254.4 L984,255.9 L1008,255.5 L1032,253.1 L1056,248.9 L1080,243.3 L1104,236.7 L1128,229.6 L1152,222.6 L1176,216.1 L1200,210.6" fill="none"/>
+    <path class="contour" d="M0,270.1 L24,266.3 L48,263.1 L72,261.0 L96,260.0 L120,260.4 L144,262.1 L168,264.9 L192,268.5 L216,272.5 L240,276.4 L264,279.8 L288,282.4 L312,283.8 L336,283.9 L360,282.6 L384,280.2 L408,276.8 L432,272.9 L456,268.9 L480,265.3 L504,262.4 L528,260.5 L552,260.0 L576,260.8 L600,262.9 L624,265.9 L648,269.7 L672,273.7 L696,277.5 L720,280.7 L744,283.0 L768,284.0 L792,283.6 L816,282.0 L840,279.2 L864,275.7 L888,271.7 L912,267.8 L936,264.3 L960,261.7 L984,260.2 L1008,260.1 L1032,261.3 L1056,263.7 L1080,267.0 L1104,270.9 L1128,274.9 L1152,278.6 L1176,281.5 L1200,283.4" fill="none"/>
+    <path class="contour" d="M0,301.6 L24,297.0 L48,295.0 L72,296.0 L96,299.7 L120,305.7 L144,312.9 L168,320.3 L192,326.7 L216,331.2 L240,333.0 L264,331.8 L288,327.9 L312,321.9 L336,314.6 L360,307.2 L384,300.9 L408,296.6 L432,295.0 L456,296.3 L480,300.4 L504,306.6 L528,313.9 L552,321.3 L576,327.5 L600,331.6 L624,333.0 L648,331.5 L672,327.2 L696,320.9 L720,313.6 L744,306.3 L768,300.2 L792,296.2 L816,295.0 L840,296.7 L864,301.1 L888,307.5 L912,314.9 L936,322.2 L960,328.2 L984,331.9 L1008,333.0 L1032,331.0 L1056,326.5 L1080,320.0 L1104,312.6 L1128,305.4 L1152,299.5 L1176,295.9 L1200,295.1" fill="none"/>
+    <path class="contour" d="M0,331.3 L24,330.1 L48,330.2 L72,331.5 L96,333.9 L120,337.3 L144,341.6 L168,346.6 L192,352.0 L216,357.6 L240,363.1 L264,368.3 L288,372.9 L312,376.8 L336,379.6 L360,381.4 L384,382.0 L408,381.4 L432,379.6 L456,376.7 L480,372.8 L504,368.2 L528,363.0 L552,357.5 L576,351.9 L600,346.5 L624,341.5 L648,337.2 L672,333.8 L696,331.4 L720,330.2 L744,330.1 L768,331.3 L792,333.6 L816,336.9 L840,341.2 L864,346.1 L888,351.5 L912,357.1 L936,362.6 L960,367.9 L984,372.5 L1008,376.5 L1032,379.4 L1056,381.3 L1080,382.0 L1104,381.5 L1128,379.8 L1152,377.0 L1176,373.2 L1200,368.6" fill="none"/>
+    <path class="contour" d="M0,386.3 L24,387.5 L48,389.6 L72,392.2 L96,395.3 L120,398.6 L144,401.8 L168,404.8 L192,407.2 L216,409.0 L240,409.9 L264,409.9 L288,409.0 L312,407.3 L336,404.9 L360,401.9 L384,398.7 L408,395.4 L432,392.3 L456,389.7 L480,387.6 L504,386.4 L528,386.0 L552,386.5 L576,388.0 L600,390.1 L624,392.9 L648,396.0 L672,399.3 L696,402.5 L720,405.4 L744,407.7 L768,409.3 L792,410.0 L816,409.8 L840,408.7 L864,406.8 L888,404.2 L912,401.2 L936,397.9 L960,394.7 L984,391.6 L1008,389.1 L1032,387.3 L1056,386.2 L1080,386.0 L1104,386.8 L1128,388.4 L1152,390.7 L1176,393.6 L1200,396.8" fill="none"/>
+    <path class="contour-accent" d="M0,426.6 L24,431.8 L48,437.9 L72,444.2 L96,450.1 L120,454.8 L144,457.9 L168,459.0 L192,457.9 L216,454.9 L240,450.2 L264,444.3 L288,438.0 L312,431.9 L336,426.6 L360,422.9 L384,421.1 L408,421.4 L432,423.8 L456,428.0 L480,433.5 L504,439.8 L528,446.1 L552,451.7 L576,456.0 L600,458.5 L624,458.9 L648,457.2 L672,453.6 L696,448.5 L720,442.4 L744,436.1 L768,430.2 L792,425.4 L816,422.2 L840,421.0 L864,421.9 L888,424.9 L912,429.6 L936,435.4 L960,441.7 L984,447.9 L1008,453.1 L1032,456.9 L1056,458.8 L1080,458.6 L1104,456.3 L1128,452.2 L1152,446.7 L1176,440.5 L1200,434.2" fill="none"/>
+    <path class="contour" d="M0,476.0 L24,486.2 L48,495.8 L72,503.2 L96,507.4 L120,507.6 L144,503.9 L168,496.7 L192,487.3 L216,477.1 L240,467.6 L264,460.4 L288,456.5 L312,456.5 L336,460.5 L360,467.8 L384,477.3 L408,487.6 L432,496.9 L456,504.0 L480,507.6 L504,507.3 L528,503.1 L552,495.6 L576,486.0 L600,475.8 L624,466.5 L648,459.7 L672,456.3 L696,456.8 L720,461.3 L744,469.0 L768,478.7 L792,488.9 L816,498.0 L840,504.7 L864,507.8 L888,507.0 L912,502.3 L936,494.4 L960,484.6 L984,474.4 L1008,465.4 L1032,459.0 L1056,456.1 L1080,457.2 L1104,462.2 L1128,470.2 L1152,480.1 L1176,490.2 L1200,499.1" fill="none"/>
+    <path class="contour" d="M0,527.7 L24,530.1 L48,532.2 L72,533.9 L96,535.1 L120,535.8 L144,536.0 L168,535.6 L192,534.7 L216,533.3 L240,531.4 L264,529.2 L288,526.8 L312,524.2 L336,521.6 L360,519.2 L384,516.9 L408,515.0 L432,513.5 L456,512.5 L480,512.0 L504,512.1 L528,512.8 L552,513.9 L576,515.5 L600,517.6 L624,519.9 L648,522.4 L672,525.0 L696,527.5 L720,529.9 L744,532.0 L768,533.7 L792,535.0 L816,535.8 L840,536.0 L864,535.7 L888,534.8 L912,533.4 L936,531.6 L960,529.4 L984,527.0 L1008,524.4 L1032,521.9 L1056,519.4 L1080,517.1 L1104,515.2 L1128,513.6 L1152,512.6 L1176,512.1 L1200,512.1" fill="none"/>
+    <path class="contour" d="M0,580.5 L24,583.3 L48,584.8 L72,584.9 L96,583.5 L120,580.8 L144,577.0 L168,572.4 L192,567.3 L216,562.1 L240,557.1 L264,552.9 L288,549.6 L312,547.6 L336,547.0 L360,547.8 L384,550.0 L408,553.4 L432,557.8 L456,562.7 L480,568.0 L504,573.0 L528,577.6 L552,581.2 L576,583.8 L600,584.9 L624,584.7 L648,583.0 L672,580.0 L696,576.0 L720,571.2 L744,566.0 L768,560.9 L792,556.1 L816,552.0 L840,549.0 L864,547.4 L888,547.1 L912,548.2 L936,550.7 L960,554.4 L984,558.9 L1008,564.0 L1032,569.2 L1056,574.2 L1080,578.5 L1104,582.0 L1128,584.2 L1152,585.0 L1176,584.4 L1200,582.4" fill="none"/>
+    <path class="contour" d="M0,633.7 L24,633.6 L48,630.6 L72,625.1 L96,617.7 L120,609.2 L144,600.5 L168,592.7 L192,586.7 L216,583.0 L240,582.1 L264,584.1 L288,588.7 L312,595.6 L336,603.8 L360,612.5 L384,620.7 L408,627.5 L432,632.1 L456,634.0 L480,633.0 L504,629.2 L528,623.0 L552,615.2 L576,606.5 L600,598.1 L624,590.7 L648,585.3 L672,582.4 L696,582.4 L720,585.2 L744,590.6 L768,597.9 L792,606.4 L816,615.0 L840,622.9 L864,629.1 L888,632.9 L912,634.0 L936,632.1 L960,627.6 L984,620.8 L1008,612.6 L1032,603.9 L1056,595.7 L1080,588.8 L1104,584.1 L1128,582.1 L1152,582.9 L1176,586.6 L1200,592.6" fill="none"/>
+    </svg>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">App para Android · Senderismo, running y ciclismo</p>
+        <h1>No vuelvas a salir de ruta <em>sin saber dónde beber agua</em>.</h1>
+        <p class="lede">Fuentes de Agua localiza las fuentes potables y manantiales más cercanos a tu posición, los ordena por distancia y te traza la ruta a pie para llegar.</p>
+        <div class="hero-actions">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.app.fuentes_de_agua" aria-label="Descargar Fuentes de Agua en Google Play">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" alt="Disponible en Google Play" width="182" height="54" loading="lazy">
+          </a>
+          <a class="secondary-link" href="#como-funciona">Ver cómo funciona</a>
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item"><strong>Gratis</strong>Sin coste, con anuncios</div>
+          <div class="hero-meta-item"><strong>Fuentes + manantiales</strong>Base de datos ampliable</div>
+          <div class="hero-meta-item"><strong>Ruta a pie</strong>Cálculo directo al punto</div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-stage">
+          <div class="phone-frame">
+            <img src="https://play-lh.googleusercontent.com/4YbuISfKenxld50fa-EM2kzeUBR4nzqi8X_QWBiTIuHiXtEYYU_Y7XkElRD2yRqilTdgvGPcxCXT0qddtPxTQGU=w526-h296" alt="Mapa de la app Fuentes de Agua mostrando fuentes cercanas ordenadas por distancia" loading="eager" width="240" height="427">
+          </div>
+          <div class="pin pin-1"><span class="pin-dot"></span>340 m</div>
+          <div class="pin pin-2"><span class="pin-dot"></span>1,2 km</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="caracteristicas">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Características</p>
+        <h2>Todo lo que necesitas para no pasar sed en ruta</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18" stroke="#2E9CAE" stroke-width="1.5"/><path d="M20 10c0 0-6 8-6 12.5A6 6 0 0 0 20 29a6 6 0 0 0 6-6.5C26 18 20 10 20 10Z" fill="#2E9CAE"/></svg>
+          <h3>Fuentes cerca de tu posición</h3>
+          <p>Activa tu ubicación y la app busca automáticamente las fuentes y manantiales más próximos, sin tener que introducir nada a mano.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="6" y="8" width="28" height="5" rx="1" fill="#C97A3D"/><rect x="6" y="17.5" width="20" height="5" rx="1" fill="#5C7A4E"/><rect x="6" y="27" width="14" height="5" rx="1" fill="#2E9CAE"/></svg>
+          <h3>Listado por distancia y color</h3>
+          <p>Cada fuente aparece codificada por color y ordenada de la más cercana a la más lejana, para decidir de un vistazo hacia dónde ir.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="5" y="7" width="30" height="26" rx="2" stroke="#2E9CAE" stroke-width="1.5"/><path d="M10 27l6-9 5 6 4-5 5 8" stroke="#5C7A4E" stroke-width="1.5" fill="none"/><circle cx="27" cy="14" r="2" fill="#C97A3D"/></svg>
+          <h3>Todas las fuentes en el mapa</h3>
+          <p>Visualiza de un vistazo todos los puntos de agua de la zona sobre el mapa y selecciónalos directamente para ver los detalles.</p>
+        </div>
+        <div class="feature">
+          <svg class="feature-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M8 30 C14 18, 18 26, 22 16 S 30 8, 33 10" stroke="#2E9CAE" stroke-width="1.5" fill="none" stroke-dasharray="1 4"/><circle cx="8" cy="30" r="2.5" fill="#5C7A4E"/><circle cx="33" cy="10" r="2.5" fill="#C97A3D"/></svg>
+          <h3>Ruta a pie hasta la fuente</h3>
+          <p>Cuando eliges un punto de agua, la app calcula el camino más directo para llegar caminando desde donde estás.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="bg-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Cómo funciona</p>
+        <h2>De la sed a la fuente en tres pasos</h2>
+      </div>
+      <div class="waypoints">
+        <div class="waypoint">
+          <div class="waypoint-marker">1</div>
+          <div class="waypoint-trail"></div>
+          <h3>Abre la app en ruta</h3>
+          <p>Actívala en tu sendero, ruta en bici o carrera; usa tu ubicación para escanear la zona a tu alrededor.</p>
+        </div>
+        <div class="waypoint">
+          <div class="waypoint-marker">2</div>
+          <div class="waypoint-trail"></div>
+          <h3>Elige la fuente más cercana</h3>
+          <p>Consulta el listado ordenado por distancia o toca directamente un punto en el mapa para ver sus detalles.</p>
+        </div>
+        <div class="waypoint">
+          <div class="waypoint-marker">3</div>
+          <h3>Sigue la ruta a pie</h3>
+          <p>La app traza el camino más corto hasta la fuente o manantial elegido. Solo queda llegar y rellenar la cantimplora.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="capturas">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Capturas</p>
+        <h2>Así se ve en tu móvil</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="screens">
+        <img src="https://play-lh.googleusercontent.com/4YbuISfKenxld50fa-EM2kzeUBR4nzqi8X_QWBiTIuHiXtEYYU_Y7XkElRD2yRqilTdgvGPcxCXT0qddtPxTQGU=w526-h296" alt="Mapa con fuentes de agua cercanas ordenadas por distancia" loading="lazy" width="200" height="356">
+        <img src="https://play-lh.googleusercontent.com/C55DsGHMFHxAeZ6fG-QzUN5zpkh2Def7NHsaDcjsOcnLXVQkXe7Ho8u3LeTsDnpk48IHibfLhXe0q0QC6zVe7A=w526-h296" alt="Listado de fuentes de agua con distancia y color" loading="lazy" width="200" height="356">
+        <img src="https://play-lh.googleusercontent.com/PgjJ9isC4dF7AsvZ7GgCZb4wtDBxRQhBEqNs7_GKStMmMu4KUOfd-yOSktnUzQDCfRUSsn8gDrMiOfnB51aMAkU=w526-h296" alt="Detalle de una fuente de agua con opción de calcular ruta" loading="lazy" width="200" height="356">
+        <img src="https://play-lh.googleusercontent.com/ekw3-3ZDPh7kiK7UxEPDgDHsdKTqTmEOGxqCmax4lxM-sXvZKk4W-NXOoyFEI2dglb_8qRCitCKQaXAGiB3Ge8U=w526-h296" alt="Ruta a pie calculada hasta la fuente seleccionada" loading="lazy" width="200" height="356">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Para quién es</p>
+        <h2>Pensada para moverse al aire libre</h2>
+      </div>
+      <div class="audience">
+        <div class="audience-item">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="4" r="2" fill="#2E9CAE"/><path d="M7 21l3-7 2 2 4-5M13 8l5 3M8 14l-3 3" stroke="#2E9CAE" stroke-width="1.6" fill="none"/></svg>
+          <h3>Senderismo</h3>
+          <p>Localiza manantiales en rutas de montaña alejadas de núcleos urbanos.</p>
+        </div>
+        <div class="audience-item">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="6" cy="18" r="2.4" stroke="#5C7A4E" stroke-width="1.6"/><circle cx="18" cy="18" r="2.4" stroke="#5C7A4E" stroke-width="1.6"/><path d="M6 18l4-9h4l3 5h-9" stroke="#5C7A4E" stroke-width="1.6" fill="none"/></svg>
+          <h3>Ciclismo</h3>
+          <p>Planifica paradas de agua sin desviarte demasiado de tu ruta en bici.</p>
+        </div>
+        <div class="audience-item">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="4.5" r="2" fill="#C97A3D"/><path d="M9 21l2-6-2-3 1-5 4 2 1 4 3 1" stroke="#C97A3D" stroke-width="1.6" fill="none"/></svg>
+          <h3>Running</h3>
+          <p>Encuentra fuentes en mitad del recorrido para tus tiradas largas.</p>
+        </div>
+        <div class="audience-item">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12l7-8 9 8-2 2-7-6-5 4-2-2z" stroke="#2E9CAE" stroke-width="1.6" fill="none"/><path d="M6 13v6h12v-6" stroke="#2E9CAE" stroke-width="1.6" fill="none"/></svg>
+          <h3>Escapadas</h3>
+          <p>Explora zonas nuevas sin preocuparte de dónde vas a beber agua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="preguntas">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Antes de descargar</h2>
+      </div>
+      <div class="faq">
+        <details class="faq-item">
+          <summary>¿Fuentes de Agua funciona sin conexión a internet?<span class="plus"></span></summary>
+          <p>Necesita datos móviles o wifi para cargar el mapa y buscar fuentes la primera vez en una zona. Una vez cargada, puedes consultar el listado y la distancia sin volver a descargar información.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿La app es gratuita?<span class="plus"></span></summary>
+          <p>Sí, es totalmente gratuita. Se financia mostrando anuncios dentro de la aplicación.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo añadir una fuente que no aparece en el mapa?<span class="plus"></span></summary>
+          <p>Sí. Cualquier persona puede dar de alta una fuente nueva desde la propia app para que quede disponible para el resto de usuarios de la comunidad.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Solo encuentra fuentes urbanas o también manantiales?<span class="plus"></span></summary>
+          <p>Incluye tanto fuentes urbanas como manantiales naturales, útiles para rutas de senderismo alejadas de la ciudad.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <svg class="hero-contours" viewBox="0 0 1200 650" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="opacity:0.6;">
+      <path class="contour" d="M0,20.0 L24,22.6 L48,25.0 L72,27.2 L96,29.1 L120,30.6 L144,31.5 L168,32.0 L192,31.9 L216,31.2 L240,30.0 L264,28.3 L288,26.3 L312,23.9 L336,21.4 L360,18.8 L384,16.3 L408,13.9 L432,11.9 L456,10.2 L480,8.9 L504,8.2 L528,8.0 L552,8.4 L576,9.3 L600,10.7 L624,12.6 L648,14.8 L672,17.2 L696,19.8 L720,22.3 L744,24.8 L768,27.1 L792,29.0 L816,30.5 L840,31.5 L864,32.0 L888,31.9 L912,31.3 L936,30.1 L960,28.5 L984,26.5 L1008,24.1 L1032,21.6 L1056,19.1 L1080,16.5 L1104,14.1 L1128,12.0 L1152,10.3 L1176,9.0 L1200,8.2" fill="none"/>
+    <path class="contour" d="M0,71.9 L24,76.0 L48,79.0 L72,80.6 L96,80.9 L120,79.8 L144,77.3 L168,73.6 L192,69.1 L216,64.0 L240,58.8 L264,53.8 L288,49.5 L312,46.0 L336,43.8 L360,43.0 L384,43.6 L408,45.6 L432,48.8 L456,53.1 L480,58.0 L504,63.2 L528,68.3 L552,73.0 L576,76.8 L600,79.5 L624,80.8 L648,80.8 L672,79.3 L696,76.5 L720,72.6 L744,68.0 L768,62.8 L792,57.6 L816,52.7 L840,48.6 L864,45.4 L888,43.5 L912,43.0 L936,44.0 L960,46.3 L984,49.8 L1008,54.2 L1032,59.2 L1056,64.4 L1080,69.5 L1104,73.9 L1128,77.5 L1152,79.9 L1176,81.0 L1200,80.6" fill="none"/>
+    <path class="contour" d="M0,127.2 L24,129.8 L48,129.5 L72,126.3 L96,120.7 L120,113.2 L144,104.7 L168,96.1 L192,88.3 L216,82.4 L240,78.8 L264,78.1 L288,80.3 L312,85.1 L336,92.0 L360,100.3 L384,109.0 L408,117.1 L432,123.8 L456,128.2 L480,130.0 L504,128.8 L528,124.9 L552,118.6 L576,110.7 L600,102.0 L624,93.6 L648,86.3 L672,81.0 L696,78.3 L720,78.4 L744,81.4 L768,87.0 L792,94.4 L816,102.9 L840,111.5 L864,119.3 L888,125.4 L912,129.1 L936,129.9 L960,127.9 L984,123.2 L1008,116.4 L1032,108.1 L1056,99.4 L1080,91.3 L1104,84.5 L1128,79.9 L1152,78.0 L1176,79.1 L1200,82.9" fill="none"/>
+    <path class="contour" d="M0,158.0 L24,156.7 L48,153.7 L72,149.6 L96,144.9 L120,140.4 L144,136.7 L168,134.5 L192,134.1 L216,135.5 L240,138.5 L264,142.7 L288,147.4 L312,151.9 L336,155.5 L360,157.6 L384,157.9 L408,156.4 L432,153.2 L456,149.0 L480,144.3 L504,139.8 L528,136.3 L552,134.3 L576,134.2 L600,135.8 L624,139.0 L648,143.3 L672,148.0 L696,152.5 L720,155.9 L744,157.7 L768,157.8 L792,156.0 L816,152.7 L840,148.4 L864,143.6 L888,139.3 L912,136.0 L936,134.2 L960,134.3 L984,136.1 L1008,139.5 L1032,144.0 L1056,148.7 L1080,153.0 L1104,156.2 L1128,157.8 L1152,157.7 L1176,155.7 L1200,152.2" fill="none"/>
+    <path class="contour" d="M0,203.4 L24,200.6 L48,197.3 L72,193.5 L96,189.5 L120,185.4 L144,181.4 L168,177.7 L192,174.6 L216,172.0 L240,170.2 L264,169.2 L288,169.1 L312,169.8 L336,171.4 L360,173.8 L384,176.8 L408,180.4 L432,184.3 L456,188.4 L480,192.5 L504,196.3 L528,199.8 L552,202.7 L576,204.9 L600,206.4 L624,207.0 L648,206.7 L672,205.5 L696,203.6 L720,200.9 L744,197.6 L768,193.8 L792,189.8 L816,185.7 L840,181.7 L864,178.0 L888,174.8 L912,172.2 L936,170.3 L960,169.2 L984,169.0 L1008,169.7 L1032,171.3 L1056,173.6 L1080,176.6 L1104,180.1 L1128,184.0 L1152,188.0 L1176,192.1 L1200,196.0" fill="none"/>
+    <path class="contour-accent" d="M0,239.9 L24,233.0 L48,225.8 L72,219.0 L96,213.0 L120,208.3 L144,205.2 L168,204.0 L192,204.8 L216,207.5 L240,211.8 L264,217.6 L288,224.3 L312,231.4 L336,238.4 L360,244.8 L384,250.1 L408,253.8 L432,255.8 L456,255.7 L480,253.8 L504,250.0 L528,244.7 L552,238.3 L576,231.3 L600,224.2 L624,217.5 L648,211.8 L672,207.4 L696,204.8 L720,204.0 L744,205.2 L768,208.3 L792,213.1 L816,219.1 L840,226.0 L864,233.1 L888,240.0 L912,246.2 L936,251.1 L960,254.4 L984,255.9 L1008,255.5 L1032,253.1 L1056,248.9 L1080,243.3 L1104,236.7 L1128,229.6 L1152,222.6 L1176,216.1 L1200,210.6" fill="none"/>
+    <path class="contour" d="M0,270.1 L24,266.3 L48,263.1 L72,261.0 L96,260.0 L120,260.4 L144,262.1 L168,264.9 L192,268.5 L216,272.5 L240,276.4 L264,279.8 L288,282.4 L312,283.8 L336,283.9 L360,282.6 L384,280.2 L408,276.8 L432,272.9 L456,268.9 L480,265.3 L504,262.4 L528,260.5 L552,260.0 L576,260.8 L600,262.9 L624,265.9 L648,269.7 L672,273.7 L696,277.5 L720,280.7 L744,283.0 L768,284.0 L792,283.6 L816,282.0 L840,279.2 L864,275.7 L888,271.7 L912,267.8 L936,264.3 L960,261.7 L984,260.2 L1008,260.1 L1032,261.3 L1056,263.7 L1080,267.0 L1104,270.9 L1128,274.9 L1152,278.6 L1176,281.5 L1200,283.4" fill="none"/>
+    <path class="contour" d="M0,301.6 L24,297.0 L48,295.0 L72,296.0 L96,299.7 L120,305.7 L144,312.9 L168,320.3 L192,326.7 L216,331.2 L240,333.0 L264,331.8 L288,327.9 L312,321.9 L336,314.6 L360,307.2 L384,300.9 L408,296.6 L432,295.0 L456,296.3 L480,300.4 L504,306.6 L528,313.9 L552,321.3 L576,327.5 L600,331.6 L624,333.0 L648,331.5 L672,327.2 L696,320.9 L720,313.6 L744,306.3 L768,300.2 L792,296.2 L816,295.0 L840,296.7 L864,301.1 L888,307.5 L912,314.9 L936,322.2 L960,328.2 L984,331.9 L1008,333.0 L1032,331.0 L1056,326.5 L1080,320.0 L1104,312.6 L1128,305.4 L1152,299.5 L1176,295.9 L1200,295.1" fill="none"/>
+    <path class="contour" d="M0,331.3 L24,330.1 L48,330.2 L72,331.5 L96,333.9 L120,337.3 L144,341.6 L168,346.6 L192,352.0 L216,357.6 L240,363.1 L264,368.3 L288,372.9 L312,376.8 L336,379.6 L360,381.4 L384,382.0 L408,381.4 L432,379.6 L456,376.7 L480,372.8 L504,368.2 L528,363.0 L552,357.5 L576,351.9 L600,346.5 L624,341.5 L648,337.2 L672,333.8 L696,331.4 L720,330.2 L744,330.1 L768,331.3 L792,333.6 L816,336.9 L840,341.2 L864,346.1 L888,351.5 L912,357.1 L936,362.6 L960,367.9 L984,372.5 L1008,376.5 L1032,379.4 L1056,381.3 L1080,382.0 L1104,381.5 L1128,379.8 L1152,377.0 L1176,373.2 L1200,368.6" fill="none"/>
+    <path class="contour" d="M0,386.3 L24,387.5 L48,389.6 L72,392.2 L96,395.3 L120,398.6 L144,401.8 L168,404.8 L192,407.2 L216,409.0 L240,409.9 L264,409.9 L288,409.0 L312,407.3 L336,404.9 L360,401.9 L384,398.7 L408,395.4 L432,392.3 L456,389.7 L480,387.6 L504,386.4 L528,386.0 L552,386.5 L576,388.0 L600,390.1 L624,392.9 L648,396.0 L672,399.3 L696,402.5 L720,405.4 L744,407.7 L768,409.3 L792,410.0 L816,409.8 L840,408.7 L864,406.8 L888,404.2 L912,401.2 L936,397.9 L960,394.7 L984,391.6 L1008,389.1 L1032,387.3 L1056,386.2 L1080,386.0 L1104,386.8 L1128,388.4 L1152,390.7 L1176,393.6 L1200,396.8" fill="none"/>
+    <path class="contour-accent" d="M0,426.6 L24,431.8 L48,437.9 L72,444.2 L96,450.1 L120,454.8 L144,457.9 L168,459.0 L192,457.9 L216,454.9 L240,450.2 L264,444.3 L288,438.0 L312,431.9 L336,426.6 L360,422.9 L384,421.1 L408,421.4 L432,423.8 L456,428.0 L480,433.5 L504,439.8 L528,446.1 L552,451.7 L576,456.0 L600,458.5 L624,458.9 L648,457.2 L672,453.6 L696,448.5 L720,442.4 L744,436.1 L768,430.2 L792,425.4 L816,422.2 L840,421.0 L864,421.9 L888,424.9 L912,429.6 L936,435.4 L960,441.7 L984,447.9 L1008,453.1 L1032,456.9 L1056,458.8 L1080,458.6 L1104,456.3 L1128,452.2 L1152,446.7 L1176,440.5 L1200,434.2" fill="none"/>
+    <path class="contour" d="M0,476.0 L24,486.2 L48,495.8 L72,503.2 L96,507.4 L120,507.6 L144,503.9 L168,496.7 L192,487.3 L216,477.1 L240,467.6 L264,460.4 L288,456.5 L312,456.5 L336,460.5 L360,467.8 L384,477.3 L408,487.6 L432,496.9 L456,504.0 L480,507.6 L504,507.3 L528,503.1 L552,495.6 L576,486.0 L600,475.8 L624,466.5 L648,459.7 L672,456.3 L696,456.8 L720,461.3 L744,469.0 L768,478.7 L792,488.9 L816,498.0 L840,504.7 L864,507.8 L888,507.0 L912,502.3 L936,494.4 L960,484.6 L984,474.4 L1008,465.4 L1032,459.0 L1056,456.1 L1080,457.2 L1104,462.2 L1128,470.2 L1152,480.1 L1176,490.2 L1200,499.1" fill="none"/>
+    <path class="contour" d="M0,527.7 L24,530.1 L48,532.2 L72,533.9 L96,535.1 L120,535.8 L144,536.0 L168,535.6 L192,534.7 L216,533.3 L240,531.4 L264,529.2 L288,526.8 L312,524.2 L336,521.6 L360,519.2 L384,516.9 L408,515.0 L432,513.5 L456,512.5 L480,512.0 L504,512.1 L528,512.8 L552,513.9 L576,515.5 L600,517.6 L624,519.9 L648,522.4 L672,525.0 L696,527.5 L720,529.9 L744,532.0 L768,533.7 L792,535.0 L816,535.8 L840,536.0 L864,535.7 L888,534.8 L912,533.4 L936,531.6 L960,529.4 L984,527.0 L1008,524.4 L1032,521.9 L1056,519.4 L1080,517.1 L1104,515.2 L1128,513.6 L1152,512.6 L1176,512.1 L1200,512.1" fill="none"/>
+    <path class="contour" d="M0,580.5 L24,583.3 L48,584.8 L72,584.9 L96,583.5 L120,580.8 L144,577.0 L168,572.4 L192,567.3 L216,562.1 L240,557.1 L264,552.9 L288,549.6 L312,547.6 L336,547.0 L360,547.8 L384,550.0 L408,553.4 L432,557.8 L456,562.7 L480,568.0 L504,573.0 L528,577.6 L552,581.2 L576,583.8 L600,584.9 L624,584.7 L648,583.0 L672,580.0 L696,576.0 L720,571.2 L744,566.0 L768,560.9 L792,556.1 L816,552.0 L840,549.0 L864,547.4 L888,547.1 L912,548.2 L936,550.7 L960,554.4 L984,558.9 L1008,564.0 L1032,569.2 L1056,574.2 L1080,578.5 L1104,582.0 L1128,584.2 L1152,585.0 L1176,584.4 L1200,582.4" fill="none"/>
+    <path class="contour" d="M0,633.7 L24,633.6 L48,630.6 L72,625.1 L96,617.7 L120,609.2 L144,600.5 L168,592.7 L192,586.7 L216,583.0 L240,582.1 L264,584.1 L288,588.7 L312,595.6 L336,603.8 L360,612.5 L384,620.7 L408,627.5 L432,632.1 L456,634.0 L480,633.0 L504,629.2 L528,623.0 L552,615.2 L576,606.5 L600,598.1 L624,590.7 L648,585.3 L672,582.4 L696,582.4 L720,585.2 L744,590.6 L768,597.9 L792,606.4 L816,615.0 L840,622.9 L864,629.1 L888,632.9 L912,634.0 L936,632.1 L960,627.6 L984,620.8 L1008,612.6 L1032,603.9 L1056,595.7 L1080,588.8 L1104,584.1 L1128,582.1 L1152,582.9 L1176,586.6 L1200,592.6" fill="none"/>
+    </svg>
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Encuentra tu próxima fuente de agua</h2>
+        <p class="lede">Descarga Fuentes de Agua gratis en Google Play y llévala en tu próxima ruta.</p>
+      </div>
+      <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.app.fuentes_de_agua" aria-label="Descargar Fuentes de Agua en Google Play">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" alt="Disponible en Google Play" width="182" height="54" loading="lazy">
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Fuentes de Agua</h3>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=com.app.fuentes_de_agua">Descargar en Google Play</a></li>
+          <li><a href="https://api.quierolibros.com/privacy-policy-apps/fuentes-de-agua/privacy-en.html">Política de privacidad</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Idioma</h3>
+        <ul>
+          <li><a href="/">Español</a></li>
+          <li><a href="/en/">English</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Trophy Lab</h3>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/dev?id=7196853208127263298">Más apps de Trophy Lab</a></li>
+          <li><a href="mailto:elmejordelinstituto@gmail.com">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Trophy Lab. Fuentes de Agua no está afiliada a Google.</span>
+      <span>Hecho para gente que no quiere pasar sed.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

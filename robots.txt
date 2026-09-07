@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fuentes-agua.devcodelight.com/sitemap.xml
